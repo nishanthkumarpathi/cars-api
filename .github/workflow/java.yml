@@ -1,0 +1,22 @@
+name: Java Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Verify Java Installation
+        run: java --version
+
+      - name: Verify Gradle Installation
+        run: gradle --version
+
+      - name: build the file
+        run: gradle build
+
