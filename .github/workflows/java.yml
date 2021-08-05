@@ -44,7 +44,7 @@ jobs:
     steps:
       - run: gradlew pmdMain pmdTest
 
-      - uses: actions/upload-artifact
+      - uses: actions/upload-artifact@v2
         with:
           name: PMDScanOutput
           path: build/reports/pmd
