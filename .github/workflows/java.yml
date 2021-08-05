@@ -24,13 +24,14 @@ jobs:
 
   testing:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Run the Jar file in the Background and test
         run: |
           java -jar ./build/libs/cars-api.jar &
           sleep 30
           curl http://localhost:5000/cars/1 | grep -i "Ford"
-          
+
 
 
 
