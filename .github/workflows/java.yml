@@ -88,4 +88,4 @@ jobs:
 
       - uses: mikepenz/action-junit-report@v2
         with:
-          reports_paths: build/test-results/test/*.xml
+          report_paths: build/test-results/test/*.xml
