@@ -13,6 +13,6 @@ jobs:
 
       - name: build the file
         run: gradle build
-
-      run: ls
+        
+      - run: ls
 
