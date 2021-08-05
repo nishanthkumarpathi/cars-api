@@ -23,8 +23,8 @@ jobs:
       
       - name: Running the Java clode
         run: |
-        java -jar ./build/libs/cars-api.jar &
-        sleep 30
+          java -jar ./build/libs/cars-api.jar &
+          sleep 30
       
       
       - name: Testing
